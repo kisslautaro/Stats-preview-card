@@ -10,8 +10,8 @@
     /* Neutral */
 
     --neutralWhite:hsl(0, 0%, 100%);
-    --neutralSlightlyParagraph:hsla(0, 0%, 100%, 0.75);
-    --neutralSlightlyHeadings:hsla(0, 0%, 100%, 0.6);
+    --neutralSlightlyHeadings:hsla(0, 0%, 100%, 0.75);
+    --neutralSlightlyParagraph:hsla(0, 0%, 100%, 0.6);
 
     /* Font */
 
@@ -21,7 +21,7 @@
 
 
 
-
+/* Global */
 
 html{
     box-sizing: border-box;
@@ -42,12 +42,19 @@ body{
 }
 
 
+
+
+/* Conteiner */
+
+
 .conteiner{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 /* Card */
 
 
@@ -61,14 +68,92 @@ body{
     grid-template-rows: 1fr;
 }
 
+
+/* Card Right */
+
+
 .card__right{
    
     background-size: cover;
     background-image: url(../images/image-header-desktop.jpg);
     background-repeat: no-repeat;
     background-color: hsl(277, 64%, 61%);
-    background-blend-mode: multiply;
+    background-blend-mode:multiply;
     border-bottom-right-radius: 1rem;
     border-top-right-radius:1rem ;
     
+}
+
+
+/* Card Left */
+
+
+.card__left{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 6rem ;
+}
+
+/* Card Left Title */
+
+
+.card__left--title{
+    color: var(--neutralWhite);
+    font-size: 3.5rem;
+    font-family: var(--fontInter);
+    font-weight: 700;
+}
+
+.card__left--title span{
+    color: var(--primarySoftViolet);
+}
+
+
+
+/* Card Left Paragraph */
+
+
+.card__left--text{
+    color: var(--neutralSlightlyParagraph);
+    font-family: var(--fontInter);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.8;
+    margin: 2rem 0 2rem 0 ;
+}
+
+/* Card Left Data */
+
+
+
+.card__left__data{
+
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.data__number,
+.data__text{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.data__number{
+    color: var(--neutralWhite);
+    font-family: var(--fontInter);
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+
+.data__text{
+    color: var(--neutralSlightlyParagraph);
+    
+    font-family: var(--fontLexendDeca);
+    letter-spacing: .1rem;
+    margin-top: 1rem;
 }
