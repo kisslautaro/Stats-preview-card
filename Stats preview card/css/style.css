@@ -55,4 +55,20 @@ body{
     width: 110rem;
     height: 45rem;
     background-color: var(--primaryDarkDesaturatedBlue);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.card__right{
+   
+    background-size: cover;
+    background-image: url(../images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: multiply;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius:1rem ;
+    
 }
