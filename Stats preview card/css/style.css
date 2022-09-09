@@ -1,0 +1,58 @@
+:root{
+    /* Colors */
+
+    /* Primary */
+
+    --primaryVeryDarkBlue:hsl(233, 47%, 7%);
+    --primaryDarkDesaturatedBlue:hsl(244, 38%, 16%);
+    --primarySoftViolet:hsl(277, 64%, 61%);
+
+    /* Neutral */
+
+    --neutralWhite:hsl(0, 0%, 100%);
+    --neutralSlightlyParagraph:hsla(0, 0%, 100%, 0.75);
+    --neutralSlightlyHeadings:hsla(0, 0%, 100%, 0.6);
+
+    /* Font */
+
+    --fontInter:'Inter', sans-serif;
+    --fontLexendDeca:'Lexend Deca', sans-serif;
+}
+
+
+
+
+
+html{
+    box-sizing: border-box;
+    font-size:  62.5%;
+    height: 100%;
+    
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+
+}
+
+
+body{
+    height: 100vh;
+    background-color: var(--primaryVeryDarkBlue);
+}
+
+
+.conteiner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Card */
+
+
+.card{
+    width: 100rem;
+    height: 50rem;
+    background-color: var(--primaryDarkDesaturatedBlue);
+}
