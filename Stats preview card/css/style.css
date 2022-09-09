@@ -52,7 +52,7 @@ body{
 
 
 .card{
-    width: 100rem;
-    height: 50rem;
+    width: 120rem;
+    height: 45rem;
     background-color: var(--primaryDarkDesaturatedBlue);
 }
