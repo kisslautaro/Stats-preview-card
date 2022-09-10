@@ -74,16 +74,19 @@ body{
 
 .card__right{
    
-    background-size: cover;
-    background-image: url(../images/image-header-desktop.jpg);
+    background-size: cover;    
     background-repeat: no-repeat;
-    background-color: hsl(277, 64%, 61%);
+    background-color: hsl(277, 64%, 61%);    
     background-blend-mode:multiply;
     border-bottom-right-radius: 1rem;
     border-top-right-radius:1rem ;
     
 }
 
+img{
+    mix-blend-mode: multiply;
+    opacity: 75%;
+}
 
 /* Card Left */
 
@@ -106,7 +109,7 @@ body{
     font-size: 3.7rem;
     font-family: var(--fontInter);
     font-weight: 700;
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
 }
 
 .card__left--title span{
@@ -151,7 +154,7 @@ body{
 .data__number{
     color: var(--neutralWhite);
     font-family: var(--fontInter);
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     
 }
